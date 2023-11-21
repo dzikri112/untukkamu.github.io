@@ -1,0 +1,256 @@
+:root {
+    --primary-color: #FFC5C5;
+    --secondary-color: #FFEBD8;
+    --primary-text: rgb(244, 53, 187);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+
+/* untuk halaman pertama */
+.container {
+    display: block;
+    margin: 10em auto;
+    padding: 2em;
+    position: relative;
+    width: 50%;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 0 10px 15px 0 rgba(57, 80, 93, 0.785);
+    animation-name: down;
+    animation-duration: 2s;
+}
+
+@keyframes down {
+    0% {
+        margin-top: -20em;
+    }
+
+    100% {
+        margin: 10em auto;
+    }
+}
+
+h1 {
+    font-size: larger;
+    margin-top: em;
+    color: var(--primary-text);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+img {
+    width: 40%;
+}
+
+/* halaman pertama selesai */
+
+
+
+/* halaman card pesan */
+.bg-pesan {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 10%;
+}
+
+/* CSS untuk menampilkan teks */
+.text-container {
+    font-size: 90%;
+    font-family: 'Arial', sans-serif;
+    color: rgba(183, 0, 0, 0.955);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10em auto;
+    width: 70%;
+
+}
+
+/* halaman card pesan selesai*/
+
+
+/* Halaman ultah */
+.wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.card {
+    padding: 0;
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 2px 5px 10px 0 rgba(57, 80, 93, 0.785);
+}
+
+.img-wrapper {
+    margin: 4em auto 1em;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+p {
+    color: var(--primary-text);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin: 1em auto 1em;
+}
+
+.tombol-card {
+    width: 25%;
+    height: 2em;
+    padding-top: .9em;
+    background-color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary-text);
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+
+}
+
+a .tombol-card {
+
+}
+/* Halaman ultah selesai */
+
+
+
+/* Halaman ucapan */
+
+.card1 {
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 10vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 3.5em auto;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+
+ .card1 p{
+    color: var(--primary-text);
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+.card2 {
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 10vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 3.5em auto;
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+.card3 {
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 10vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 3.5em auto;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+.card4 {
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 10vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 3.5em auto;
+    animation-name: zoom;
+    animation-duration: 6s;
+}
+.card5 {
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 10vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 3.5em auto;
+    animation-name: zoom;
+    animation-duration: 8s;
+}
+
+.card5 a{
+    color: var(--primary-text);
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    margin: auto;
+}
+@keyframes zoom {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        margin: 3.5em auto;
+    }
+}
+
+
+
+/* halaman ucapan selesai */
+
+
+/* Efek */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+
+.zoom-in {
+    transform: scale(0);
+    transition: transform 1s ease-in-out;
+}
+
+.zoom-in.active {
+    transform: scale(1.1);
+}
+
+/* efek done */
